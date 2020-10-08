@@ -24,6 +24,8 @@ public class Bin {
     }
 
     public int getItemPrice() {
+        if(items.isEmpty())
+            return 0;
         return items.peek().getRetailPrice();
     }
 
